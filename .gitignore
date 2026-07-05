@@ -1,0 +1,31 @@
+# secretos / credenciales (API keys de Groq y Evolution)
+config.ini
+config_cliente.ini
+
+# datos personales (telefonos/nombres reales)
+contactos.csv
+
+# captura HAR de SEDAPAL: puede traer cookies/tokens de sesion
+*.har
+
+# runtime / generado en cada maquina
+emergencias.db
+monitor_state.json
+webhook.log
+*.log
+_thumb_test.txt
+
+# build de PyInstaller (los .exe se regeneran con build_backend.bat /
+# build_cliente.bat; dist_backend/ ademas trae config.ini y contactos.csv
+# reales, nunca deben quedar en git)
+build/
+dist/
+dist_compartir/
+dist_backend/
+dist_red/
+*.spec
+__pycache__/
+*.pyc
+
+# config local de Claude Code (especifica de esta maquina)
+.claude/
